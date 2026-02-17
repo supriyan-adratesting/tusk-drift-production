@@ -13,6 +13,7 @@ from src.controllers.employer import employer_controller
 from src.controllers.payment import payment_controller
 from src.controllers.admin import admin_controller
 from src.controllers.chat_bot import chat_bot_controller
+from src.controllers.health import health_controller
 
 
 

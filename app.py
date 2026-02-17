@@ -1,3 +1,6 @@
+# Initialize Tusk Drift SDK FIRST - before any other imports
+import tusk_drift_init  # noqa: F401
+
 from src import app
 from flask_cors import CORS
 from flask_executor import Executor
@@ -64,4 +67,6 @@ CORS(app)
 #     return {"status_code":token_status}
 
 if __name__ == '__main__':
+    from drift import TuskDrift
+    TuskDrift.get_instance().mark_app_as_ready()
     app.run()
