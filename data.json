@@ -1,0 +1,178 @@
+[
+    {
+        "id": 100055,
+        "About": "Patricia Venti is a skilled programmer with experience in Java, Python, OCaml, Haskell, Shell Scripting, and some Ruby. She has significant experience with web technologies including graphic design, HTML, CSS, PHP, MySQL, Flash, and JavaScript/jQuery. Patricia is also familiar with networked systems and cloud computing, with experience in Big Data technologies (Hadoop), AWS, and OpenStack tools, software, and infrastructure.",
+        "Additional_Information": [
+            {
+                "id": "",
+                "title": "",
+                "description": ""
+            }
+        ],
+        "Candidate_Name": "kalpana Ayyappan",
+        "Contact_Information": {
+            "Address": "Coimbatore",
+            "Email": "Kalpanakutty49@gmail.com",
+            "Phone_Number": 9789821145
+        },
+        "Education": [
+            {
+                "CGPA/Percentage": "Bachelor of Science in Engineering",
+                "Degree": "Bachelor of Science in Engineering",
+                "End_Month": "May",
+                "End_Year": "20XX",
+                "Institute_Name": "University of Pennsylvania, School of Engineering and Applied Science",
+                "Is_Pursuing": false,
+                "Location": "Philadelphia, PA",
+                "Major": "Networked & Social Systems Engineering",
+                "Start_Month": "",
+                "Start_Year": "",
+                "University": ""
+            },
+            {
+                "CGPA/Percentage": "",
+                "Degree": "",
+                "End_Month": "June",
+                "End_Year": "20XX",
+                "Institute_Name": "William Penn Academy",
+                "Is_Pursuing": false,
+                "Location": "Philadelphia, PA",
+                "Major": "",
+                "Start_Month": "",
+                "Start_Year": "",
+                "University": ""
+            }
+        ],
+        "Languages": [
+            {
+                "Language": "",
+                "Language_Level": ""
+            },
+            {
+                "Language": "",
+                "Language_Level": ""
+            },
+            {
+                "Language": "",
+                "Language_Level": ""
+            },
+            {
+                "Language": "",
+                "Language_Level": ""
+            },
+            {
+                "Language": "",
+                "Language_Level": ""
+            }
+        ],
+        "Personal_Details": {
+            "Father's_Name": "",
+            "Gender": "",
+            "Nationality": ""
+        },
+        "Skills": [
+            {
+                "Skill": "Java",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Python",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "OCaml",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Haskell",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Shell Scripting",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Ruby",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Graphic design",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "HTML",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "CSS",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "PHP",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "MySQL",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Flash",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "JavaScript / jQuery",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "Big Data technologies (Hadoop)",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "AWS",
+                "Skill_Level": ""
+            },
+            {
+                "Skill": "OpenStack tools, software, and infrastructure",
+                "Skill_Level": ""
+            }
+        ],
+        "Social_Links": {
+            "LinkedIn": ""
+        },
+        "Work_Experience": [
+            {
+                "Currently_Working": false,
+                "End_Month": "",
+                "End_Year": "Present",
+                "Job_Description": "Contribute to design and grading of homework assignments for Intro to Algorithms class with 30 students. Hold weekly office hours and review sessions; Design and update current course website.",
+                "Job_Title": "Teaching Assistant",
+                "Organization_Name": "University of Pennsylvania",
+                "Start_Month": "September",
+                "Start_Year": "2018",
+                "Work_Location": "Philadelphia, PA"
+            },
+            {
+                "Currently_Working": false,
+                "End_Month": "August",
+                "End_Year": "2018",
+                "Job_Description": "Led community management and handled social media accounts for clients of digital marketing & advertising agency. Created content marketing plans based on market research and competitive analysis. Organized digital marketing conference and made cold calls to recruit speakers. Assembled data-driven insights about online visitor behavior to increase conversion rates.",
+                "Job_Title": "Content Marketing Intern, Performance Marketing Department",
+                "Organization_Name": "Digital One",
+                "Start_Month": "June",
+                "Start_Year": "2018",
+                "Work_Location": "New York, NY"
+            },
+            {
+                "Currently_Working": false,
+                "End_Month": "May",
+                "End_Year": "2018",
+                "Job_Description": "Provided style suggestions to customers and explained latest promotional offerings. Managed cash register and handled transactions averaging $10,000 per week. Updated displays and arranged merchandise to generate customer interest.",
+                "Job_Title": "Associate",
+                "Organization_Name": "Ann Taylor Loft",
+                "Start_Month": "June",
+                "Start_Year": "2016",
+                "Work_Location": "King of Prussia, PA"
+            }
+        ]
+    }
+]

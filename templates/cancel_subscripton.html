@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Invite to Apply</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            /* White for the container */
+            --text-color: #333;
+            /* Main text color */
+            --secondary-bg: #f7f7f7;
+            /* Grey background for jobs */
+            --side-bg: #eaeaea;
+            /* Light grey for the sides */
+            --header-footer-bg: #ffd5ab;
+            /* Header/Footer background */
+            --button-bg: #ff9832;
+            /* Button background */
+            --button-hover: #e67c26;
+            /* Button hover color */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--side-bg);
+            /* Light grey background */
+            color: var(--text-color);
+        }
+
+        .email-container {
+            max-width: 640px;
+            margin: 0 auto;
+            background-color: var(--bg-color);
+            /* White container */
+            border-radius: 2px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .email-header,
+        .email-footer {
+            background-color: var(--header-footer-bg);
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .email-header img,
+        .email-footer img {
+            width: 200px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .email-body {
+            padding: 25px;
+            background-color: var(--bg-color);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 30px;
+            margin-top: 10px;
+        }
+
+        .job-card {
+            background-color: var(--secondary-bg);
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .job-location {
+            font-size: 14px;
+            color: #888;
+            margin-top: 5px;
+        }
+
+        .job-description {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .job-descriptions {
+            font-size: 12px;
+            margin-top: 18px;
+        }
+
+        .view-job-button {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: var(--button-bg);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .view-job-button:hover {
+            background-color: var(--button-hover);
+        }
+
+        @media (max-width: 660px) {
+
+            .email-header img,
+            .email-footer img {
+                width: 150px;
+            }
+
+            .job-card {
+                padding: 10px;
+            }
+
+            .view-job-button {
+                padding: 8px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="email-background" style="background-color: var(--side-bg);">
+        <div class="email-container">
+            <!-- Header -->
+            <div class="email-header">
+                <img src="https://cdn.2ndcareers.com/secondCareersLogo.png" alt="Company Logo">
+            </div>
+
+            <!-- Body -->
+            <div class="email-body">
+                <div style="text-align: center;">
+                    <img src=" https://cdn.2ndcareers.com/Cancel_subscription_img.png"
+                        style="display: block; height: auto; border: 0; width: 50%; margin: 0 auto;" alt="Invite"
+                        title="Invite" height="auto" />
+                </div>
+                <div class="section-title">
+                    <h3>Your Subscription Has Been Canceled</h3>
+                    <p class="job-descriptions"
+                        style="font-size: 14px; line-height: 28px; font-weight: 400; color: #555; margin: 5px 0; text-align: start;">
+                        Hi {full_name}, <br>
+                        <span style="text-indent: 30px; text-align: start;">
+                            We are writing to confirm that your subscription to 2nd Careers has been successfully
+                            canceled. Please note that while your subscription has been canceled,<br> you will
+                            continue to
+                            have access to all features until your subscription end date,<br>
+                            {end_date}.
+                    </p>
+                    <p class="job-descriptions" style="font-weight: 500; font-size: 14px; text-align: center;">
+                        You can reactivate your subscription anytime here
+                    </p>
+                    <div style=" margin-top: 0px; text-align: center;">
+
+                        <a href={redirect_url} class="view-job-button">Upgrade</a>
+                    </div>
+                    <p class="job-descriptions"
+                        style="font-size: 13px; line-height: 28px; margin-top: 20px; font-weight: 400;color: #555; ">
+                        If you have any questions, feel free to reply to this email or reach out to us at
+                        info@2ndcareers.com
+                    </p>
+                    <h6>
+                        Best regards,<br>
+                        The 2nd Careers Team
+
+                    </h6>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="email-footer">
+                <img src="https://cdn.2ndcareers.com/secondCareersLogo.png" alt="Footer Logo">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

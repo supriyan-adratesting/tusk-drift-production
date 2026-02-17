@@ -1,0 +1,6 @@
+{
+    "level_1":
+    {
+        "prompt":"Create a  summary of a candidate's resume data in single line.  for resume data in json format {{data}}. the summary should contain experience and skills"
+    }
+}

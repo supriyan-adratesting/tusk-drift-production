@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Verification</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: rgb(244, 236, 250);
+      font-family: 'Inter', sans-serif;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-bottom: 30PX;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      border: none;
+      box-shadow: 5px 5px 5px rgb(221, 221, 221);
+    }
+
+    .gradient-bg {
+      background-color: #F58B0E;
+      border-radius: 10px 10px 0 0;
+      padding: 10px;
+      overflow: hidden;
+    }
+
+    .header-img {
+      width: 250px;
+      margin: 0 auto;
+      display: block;
+    }
+
+    .content-img {
+      width: 60%;
+      max-width: 60%;
+      height: auto;
+      margin: 20px auto;
+      padding-top: 10PX;
+      display: block;
+    }
+
+    .text-content {
+      text-align: center;
+      color: #282828;
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+
+    .description {
+      text-align: center;
+      color: #6e6e6e;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .description1 {
+      text-align: center;
+      color: #6e6e6e;
+      font-size: 12px;
+      margin-bottom: 20px;
+    }
+
+    .btn-reset-password {
+      display: block;
+      width: 80%;
+      max-width: 200px;
+      margin: 20px auto;
+      padding: 15px 0;
+      background-color: #F58B0E;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .btn-reset-password:hover {
+      background-color: #ffffff;
+      color: #F58B0E;
+      border: solid 1px;
+      border-color: #F58B0E;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="gradient-bg">
+      <img src="https://cdn.adraproductstudio.com/2nd_careers_logo_white-bg.png" alt="2n Careers" class="header-img">
+    </div>
+
+    <img src="https://cdn.adraproductstudio.com/Verification Code.png" alt="Forgot Password" class="content-img">
+
+    <div class="text-content">
+      Verify your email
+    </div>
+    <div class="description">
+      Thank you for registering with us! To ensure the security of your account, please verify your email address by clicking on the link below
+    </div>
+
+    <a href={{link}} class="btn-reset-password">Click to verify</a>
+  <div class="description1">
+    Once verified, you'll have full access to our services.
+    If you didn't register for an account, please ignore this email.  
+  </div>
+</div>
+</body>
+
+</html>

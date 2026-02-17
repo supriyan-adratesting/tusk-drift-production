@@ -1,0 +1,6 @@
+{
+    "level_1":
+    {
+        "prompt":"Create a  summary of a Employer's job post data in single line.  for job post data in json format {{data}}. the summary should contain job title and requirement of job"
+    }
+}

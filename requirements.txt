@@ -1,0 +1,62 @@
+wheel
+uWSGI==2.0.22
+flask
+Flask-WTF
+javalang
+# openai==1.55.3
+python-dotenv
+tiktoken
+stripe
+tenacity==8.3.0
+langchain
+flask_jwt_extended
+flask_cors
+geopy
+authlib
+PyMySQL[rsa]
+mysqlclient
+sendgrid
+python3-linkedin
+flask_oauthlib
+mixpanel
+Authlib
+docx2txt
+meilisearch
+PyMuPDF
+Werkzeug==2.2.2
+flask_executor
+# boto3
+boto3==1.35.2
+jq
+langchain-community
+langchain-core
+# langchain-openai==0.1.17
+PyPDF2
+Flask-MySQLdb
+pytest
+pytest-mock
+schedule
+mysql-connector-python==8.4.0
+openai
+httpx==0.27.0
+qdrant-client==1.12.0
+llama-index
+llama-index-embeddings-openai
+s3fs
+llama-index-llms-openai
+llama-index-vector-stores-qdrant
+fastembed==0.3.6
+llama-index-embeddings-fastembed
+openpyxl 
+python-docx
+# spacy
+# ics
+# twilio
+# deepgram-sdk==2.12.0
+langchain == 0.3.18
+langchain_openai == 0.3.5
+Flask[async]
+razorpay
+pyexcel
+pyexcel-xlsx
+pyexcel-xls

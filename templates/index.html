@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mixpanel Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        $(document).ready(function() {
+            display_dashboard('board');
+        });
+
+        function display_dashboard(flag) {
+            $("#div_content").html("<div style=\"text-align: center;\"><i class=\"fa fa-spinner fa-spin\" style=\"font-size:24px\"></i></div>");
+            let url_content = '';
+            if (flag === "events") {
+                url_content = '<iframe  src="https://mixpanel.com/project/3261861/view/3769553/app/events/embed" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe>';
+            } else if (flag === "users") {
+                url_content = '<iframe  src="https://mixpanel.com/project/3261861/view/3769553/app/users/embed" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe>';
+            } else if (flag === "board") {
+                url_content = '<iframe  src="https://mixpanel.com/project/3261861/view/3769553/app/boards/embed#id=6917095" style="top: 0; left: 0; width: 100%; height: 200%; position: absolute; border: 0;" allowfullscreen></iframe>';
+            }
+            $("#div_content").html(url_content);
+        }
+    </script>
+</head>
+<body>
+    <div style="text-align: center;">
+        <button type="button" class="btn btn-primary" onclick="display_dashboard('board')">Board</button>
+        <button type="button" class="btn btn-primary" onclick="display_dashboard('events')">Events</button> 
+        <button type="button" class="btn btn-primary" onclick="display_dashboard('users')">Users</button>   
+    </div>
+    <br/>
+    <div id="div_content" style="left: 0; width: 100%; height: 1000px; position: relative;"></div>
+</body>
+</html>
