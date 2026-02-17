@@ -24,7 +24,7 @@ jobs:
           source venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
-          pip install tusk
+          pip install tusk-drift-cli
 
       - name: Start backend service
         run: |
