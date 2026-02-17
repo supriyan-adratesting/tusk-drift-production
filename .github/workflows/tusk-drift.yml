@@ -1,0 +1,40 @@
+name: Tusk Drift CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  tusk-drift:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m venv venv
+          source venv/bin/activate
+          pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install tusk
+
+      - name: Start backend service
+        run: |
+          source venv/bin/activate
+          python app.py &
+          sleep 15
+
+      - name: Run Tusk Drift tests
+        env:
+          TUSK_API_KEY: ${{ secrets.TUSK_API_KEY }}
+        run: |
+          source venv/bin/activate
+          tusk run --cloud
