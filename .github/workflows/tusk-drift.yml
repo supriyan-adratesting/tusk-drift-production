@@ -16,7 +16,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
+          python-version: "3.12"  # SDK requires 3.12+, not 3.10
 
       - name: Install dependencies
         run: |
@@ -24,17 +24,8 @@ jobs:
           source venv/bin/activate
           pip install --upgrade pip
           pip install -r requirements.txt
-          pip install tusk-drift-cli
-
-      - name: Start backend service
-        run: |
-          source venv/bin/activate
-          python app.py &
-          sleep 15
+          # Remove: pip install tusk-drift-cli (it's not a pip package)
 
       - name: Run Tusk Drift tests
-        env:
-          TUSK_API_KEY: ${{ secrets.TUSK_API_KEY }}
-        run: |
-          source venv/bin/activate
-          tusk run --cloud
+        uses: Use-Tusk/drift-action@v1  # Use the official GitHub Action
+        
