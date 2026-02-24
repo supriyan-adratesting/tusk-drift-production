@@ -1,6 +1,7 @@
 wheel
 uWSGI==2.0.22
-flask
+tusk-drift-python-sdk
+flask==2.2.5
 Flask-WTF
 javalang
 # openai==1.55.3

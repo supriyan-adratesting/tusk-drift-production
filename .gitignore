@@ -7,3 +7,4 @@ venv/
 .tusk/results
 .tusk/logs
 .tusk/setup
+.tusk/traces
