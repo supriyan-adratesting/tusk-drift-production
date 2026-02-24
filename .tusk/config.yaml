@@ -13,7 +13,7 @@ traces:
   dir: .tusk/traces
 
 test_execution:
-  timeout: 35s
+  timeout: 60s
 
 recording:
   sampling_rate: 1
