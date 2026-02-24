@@ -36,8 +36,6 @@ RAZORPAY_KEY_ID = os.getenv("RAZORPAY_KEY_ID")
 RAZORPAY_KEY_SECRET = os.getenv("RAZORPAY_KEY_SECRET")
 
 
-WH_SEC_KEY = 'whsec_uwbsFe2ICD0MPw9Rreyqy4lw81RzSShe'
-
 stripe.api_key = STRIPE_KEY
 
 try:
