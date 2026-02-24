@@ -34,6 +34,7 @@ jobs:
 
       - name: Install system dependencies
         run: sudo apt update && sudo apt install -y socat
+             sudo apt update && sudo apt install -y socat bubblewrap
 
       - name: Install dependencies
         run: |
