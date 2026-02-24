@@ -22,9 +22,13 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+          pip install tusk-drift-cli
 
-      - name: Run Tusk Drift trace tests
-        uses: Use-Tusk/drift-action@v1
-        with:
-          cache-key: ${{ runner.os }}-tusk-drift-${{ hashFiles('.tusk/config.yaml') }}
-          api-key: ${{ secrets.TUSK_API_KEY }}
+      - name: Start backend
+        run: |
+          python app.py &
+          sleep 15
+
+      - name: Run Tusk Drift (Local)
+        run: |
+          tusk run
