@@ -44,11 +44,13 @@ jobs:
       - name: Install Tusk CLI
         run: curl -fsSL https://cli.usetusk.ai/install.sh | sh
 
-      - name: Check MySQL tables
+      - name: Create .env file
         run: |
-          sudo apt-get install -y mysql-client
-          mysql -h 127.0.0.1 -u root -proot -e "SHOW DATABASES;"
-          mysql -h 127.0.0.1 -u root -proot -e "USE secondcareers_local; SHOW TABLES;"
+         echo "MYSQL_HOST=127.0.0.1" >> .env
+         echo "MYSQL_USER=root" >> .env
+         echo "MYSQL_PASSWORD=root" >> .env
+         echo "MYSQL_DATABASE=secondcareers_local" >> .env
+         echo "JWT_ACCESS_TOKEN_EXPIRES=3600" >> .env    
 
       - name: Start backend
         run: |
